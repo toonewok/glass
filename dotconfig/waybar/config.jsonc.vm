@@ -1,0 +1,115 @@
+[
+// Feb 19, 2025
+// Redoing rice again lmao
+
+//--------------------------------------------
+// main monitor bar options
+//--------------------------------------------
+
+{
+	"include": "~/.config/waybar/modules.jsonc",
+	"output":"Virtual-1",
+	//"layer": "top",
+	"position": "right",
+	"mod":"dock",
+	"width":50,
+	"spacing": 4,
+	"margin-right": 0,
+	"margin-left": 5,
+	"margin-top": 50,
+	"margin-bottom": 50,
+
+//--------------------------------------------
+// module layout
+//--------------------------------------------
+	"modules-left":
+	[
+		
+	"custom/power",
+
+	"group/vertclock",
+
+	"group/media",
+
+	"group/soft"
+			
+	],
+	"modules-center":
+	[	
+		"custom/spotify-out"
+	],
+	"modules-right":
+	[	
+		"group/misc",
+		"hyprland/workspaces"
+	],
+	"group/vertclock":
+	{
+		"orientation":"vertical",
+		"modules": [
+		"clock#verta",
+		"clock#vertb"
+		]
+	},
+	"group/soft":
+	{
+		"orientation":"vertical",
+		"class":"soft-group",
+		"modules":[
+			"custom/steam",
+			"custom/osrs",
+			"custom/spotify",
+			"custom/blender",
+			"custom/cad",	
+			"custom/calc"
+
+				
+		]
+	},
+
+	"group/media":
+	{
+		"orientation":"vertical",
+		
+		"modules":[
+			"custom/pp",
+			"custom/prev",
+			"custom/next"
+
+		]
+	},
+
+	"group/misc":
+	{	
+		"rotate":90,
+		"orientation":"vertical",
+		"drawer":{
+				"transition-duration": 500,
+				"children-class": "not-power",
+				"transition-left-to-right": false
+			},
+			"modules":["custom/trayic", "tray" ]
+	},
+
+	"group/pwr":
+	{
+		"position": "right",
+		"orientation": "vertical",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-power",
+			"transition-left-to-right": false
+			  },
+	"modules":["custom/power","custom/reboot"]
+	}
+
+
+
+}
+
+
+
+
+
+
+]

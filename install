@@ -31,8 +31,7 @@ cp -R shellscripts ~/
 sed -i -e "s|<user>|$USER|g" hyprlockgetty
 
 
-tar -xzf doticons.tgz
-tar -xzf dotthemes.tgz
+
 
 
 rm *.tgz
@@ -63,8 +62,6 @@ fi
 
 #copies the files to their respective paths
 cp -r dotconfig/* ~/.config/
-cp -r doticons/* ~/.icons/
-cp -r dotthemes/* ~/.themes/
 cp -r Pictures/* ~/Pictures
 cp -r shellscripts/* ~/shellscripts/
 
