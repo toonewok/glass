@@ -97,7 +97,7 @@ echo "$nvimtext" >> ~/.config/nvim/init.vim
 	echo ""
 	echo "$varpw" | sudo -S pacman -R sddm dolphin --noconfirm
 	rm -rf ~/$ricename
-	echo "done.....system rebooting.....godspeed $USER.....godspeed"
+	echo "done.....system rebooting.....farewell $USER...:)"
 	sleep 1
 	echo 5
 	sleep 1

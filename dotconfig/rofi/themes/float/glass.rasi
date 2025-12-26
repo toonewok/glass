@@ -1,0 +1,22 @@
+/****
+Color file
+****/
+
+* {
+	font: "EnvyCoder Nerd Font 22";
+	fg0: #aaaaaa;
+	bg0trans: #090a0a59;
+	bgredtrans: #b21d24CC;
+	bg0: #090a0a;
+	bg1: #282a2e;
+	sel: #66a29b;
+	act: #56bfcc;
+	accent: #005066;
+
+	debug: #F49999;
+	red0: #e0000b;
+
+
+
+}
+@import "float.rasi"
