@@ -1,0 +1,43 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: rgba(12, 12, 12, 0.9);
+}
+
+*{
+background-color: transparent;
+}
+button {
+    border-radius: 4;
+    border-color: black;
+	text-decoration-color: #FFFFFF;
+    color: #aaaaaa;
+	background-color: transparent;
+	border-style: solid;
+	margin: 0px 10px;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 45%;
+}
+
+button:focus, button:active, button:hover {
+	background-color: rgba(170,170,170, 0.1);
+	outline-style: none;
+}
+
+#lock {
+    background-image: image(url("replace-me/.config/wlogout/icons/lock.png"));
+}
+
+
+#shutdown {
+    background-image: image(url("replace-me/.config/wlogout/icons/pwr.png"));
+}
+
+#reboot {
+    background-image: image(url("replace-me/.config/wlogout/icons/rstrt.png"));
+}

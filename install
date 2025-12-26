@@ -13,7 +13,7 @@ read -s varpw
 echo "$varpw" | sudo -S pacman -Syy
 
 #installs extra base packages not included with cachy
-echo "$varpw" | sudo -S pacman -S --noconfirm --needed tty-clock xclip hyprlock hyprpaper nvim rofi waybar zsh nwg-look nemo pavucontrol ttf-envycoder-nerd ttf-tinos-nerd spotify-launcher steam swayidle gimp prismlauncher obs-studio vlc shotcut wine
+echo "$varpw" | sudo -S pacman -S --noconfirm --needed go gtk3 gtk-layer-shell tty-clock xclip hyprlock hyprpaper nvim rofi waybar zsh nwg-look nemo pavucontrol ttf-envycoder-nerd ttf-tinos-nerd spotify-launcher steam swayidle gimp prismlauncher obs-studio vlc shotcut wine
 
 #installs ohmyzsh
 RUNZSH=no CHSH=no KEEPZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -62,6 +62,8 @@ else
 	sed -i -e "s|Virtual-1|$monname|g" dotconfig/waybar/modules.jsonc
 	sed -i -e "s|Virtual-1|$monname|g" dotconfig/hypr/hyprland.conf
 	sed -i -e "s|1920x1080|$monres|g" dotconfig/hypr/hyprland.conf
+	sed -i -e "s|Virtual-1|$monname|g" dotconfig/hypr/hyprlock.conf
+	sed -i -e "s|replace-me|$HOME|g" dotconfig/wlogout/style.css
 fi
 
 #copies the files to their respective paths
@@ -73,13 +75,25 @@ cp -r shellscripts/* ~/shellscripts/
 cd ~/
 git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -s --noconfirm && echo "$varpw" | sudo -S pacman -U *.pkg.tar.zst --noconfirm
 
+
 cd ~/
+
 rm -rf ~/yay-bin
 
 #installs vesktop
 echo "$varpw" | yay -S --noconfirm --needed Vesktop
 #installs faugus
 echo "$varpw" | yay -S --noconfirm --needed faugus-launcher
+#installs wlogout
+echo "$varpw" | yay -S --noconfirm --needed wlogout
+#installs quickshell and sets up screenshot utility
+echo "$varpw" | yay -S --noconfirm --needed quickshell
+cd ~/.config/quickshell
+git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
+
+cd ~/
+
+
 
 #installs neovim plugins
 nvim +'PlugInstall --sync' +qa

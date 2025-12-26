@@ -25,6 +25,7 @@ alias upc="sudo ~/shellscripts/updatecleanup.sh"
 #rice $ricename $action
 #possible actions = save/restore/refresh
 #example rice glass restore
+#refresh example = rice refresh
 alias rice="~/shellscripts/riceswap.sh"
 #not sure you need this but better safe than sorry
 alias gtkfix="xhost si:localuser:root"

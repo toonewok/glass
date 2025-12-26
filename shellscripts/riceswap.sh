@@ -7,6 +7,15 @@ waypath=$HOME/.config/waybar/
 projpath=$HOME/projects/rice/$ricename
 confpath=$projpath/dotconfig
 
+if [ "$ricename" == "refresh" ];
+  then
+	pkill waybar
+	pkill hyprpaper
+
+	nohup waybar >/dev/null 2>&1 &
+	nohup hyprpaper >/dev/null 2>&1 &
+fi
+
 if [ "$action" == "save" ];
   then
 	  echo saving...
@@ -14,6 +23,9 @@ if [ "$action" == "save" ];
 	  cp ~/.config/cava/config ~/.config/cava/config.$ricename
 	  cp ~/.config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf.$ricename
 	  cp ~/.config/hypr/hyprpaper.conf ~/.config/hypr/hyprpaper.conf.$ricename
+	  cp ~/.config/hypr/hyprlock.conf ~/.config/hypr/hyprlock.conf.$ricename
+	  cp ~/.config/wlogout/layout ~/.config/wlogout/layout.$ricename
+	  cp ~/.config/wlogout/style.css ~/.config/wlogout/style.css.$ricename
 	  cp ~/.config/rofi/config.rasi ~/.config/rofi/config.rasi.$ricename
 	  cp ~/.config/waybar/config.jsonc ~/.config/waybar/config.jsonc.$ricename
 	  cp ~/.config/waybar/modules.jsonc ~/.config/waybar/modules.jsonc.$ricename
@@ -30,6 +42,9 @@ elif [ "$action" == "restore" ];
 	cat ~/.config/cava/config.$ricename > ~/.config/cava/config
 	cat ~/.config/hypr/hyprland.conf.$ricename > ~/.config/hypr/hyprland.conf
 	cat ~/.config/hypr/hyprpaper.conf.$ricename > ~/.config/hypr/hyprpaper.conf
+	cat ~/.config/hypr/hyprlock.conf.$ricename > ~/.config/hypr/hyprlock.conf
+	cat ~/.config/wlogout/layout.$ricename > ~/.config/wlogout/layout
+	cat ~/.config/wlogout/style.css.$ricename > ~/.config/wlogout/style.css
 	cat ~/.config/rofi/config.rasi.$ricename > ~/.config/rofi/config.rasi
 	cat ~/.config/waybar/config.jsonc.$ricename > ~/.config/waybar/config.jsonc
 	cat ~/.config/waybar/modules.jsonc.$ricename > ~/.config/waybar/modules.jsonc
@@ -45,16 +60,6 @@ elif [ "$action" == "restore" ];
 
 	nohup waybar >/dev/null 2>&1 &
 	nohup hyprpaper >/dev/null 2>&1 &
-
-elif [ "$action" == "refresh" ];
-  then
-	
-	pkill waybar
-	pkill hyprpaper
-
-	nohup waybar >/dev/null 2>&1 &
-	nohup hyprpaper >/dev/null 2>&1 &
-
 
 elif [ "$action" == "git" ];
 	then

@@ -80,7 +80,7 @@
 	{
 		"format": "⏻",
 		"tooltip":false,
-		"on-click": "~/shellscripts/pwrbtn.sh"
+		"on-click": "wlogout"
 	},
 	"custom/quit":
 	{
