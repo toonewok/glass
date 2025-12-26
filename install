@@ -4,6 +4,8 @@
 
 ricename=glass
 
+rm ~/.zshrc
+
 echo Please enter your root/sudo password
 read -s varpw
 
