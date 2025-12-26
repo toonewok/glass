@@ -1,5 +1,5 @@
 # Glass install
-Install your archbased hypr install, this script assumes only your main monitor will be plugged in during execution, check the hyprland conf for instructions onadding another monitor 
+Install your archbased hypr install, this script assumes only your main monitor will be plugged in during execution, check the hyprland conf for instructions on adding another monitor 
 ## Installing
 once logged into hyprland clone this repo and cd into it
 
