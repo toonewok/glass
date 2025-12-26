@@ -85,10 +85,7 @@ echo "$nvimtext" >> ~/.config/nvim/init.vim
 
 
 
-echo "Would like to have the system boot directly to hypr?(y/n)"
-read locktog
 
-if [ "$locktog" = "y" ]; then
 
 	echo "$varpw" | sudo -S systemctl enable getty@tty1
 	echo "$varpw" | sudo -S mkdir -p /etc/systemd/system/getty@tty1.service.d
@@ -114,15 +111,5 @@ if [ "$locktog" = "y" ]; then
 	sleep 1
 	echo "$varpw" | sudo -S reboot
 
-else
-
-	cp ~/$ricename/.zshrc ~/
-	cp ~/$ricename/post_install ~/
-	echo done....check ~/post_install for instructions on how to bypass default login screen, the system will now reboot in 5 seconds
-	rm -rf ~/$ricename
-	sleep 5
-	echo "$varpw" | sudo -S reboot
-
-fi
 
 #echo done
