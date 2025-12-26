@@ -11,14 +11,10 @@ window {
 background-color: transparent;
 }
 button {
-    border-radius: 4;
-    border-color: black;
-	text-decoration-color: #FFFFFF;
-    color: #aaaaaa;
+	border-style: none;
+	color: #aaaaaa;
 	background-color: transparent;
-	border-style: solid;
 	margin: 0px 10px;
-
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 45%;
