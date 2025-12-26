@@ -8,7 +8,7 @@
 
 {
 	"include": "~/.config/waybar/modules.jsonc",
-	"output":"DP-3",
+	"output":"Virtual-1",
 	//"layer": "top",
 	"position": "top",
 	"mod":"dock",
@@ -44,7 +44,7 @@
 		"orientation":"horizontal",
 		"modules": [
 		"clock#verta",
-		"clock#vertb"
+		"clock#vVirtual-1"
 		]
 	},
 	"group/storage":
