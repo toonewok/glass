@@ -7,6 +7,8 @@ by default hyprlands bind to open a terminal is SUPER+Q
 
 -git clone https://github.com/toonewok/glass
 
+-cd glass
+
 once in the directory execute install
 
 -./install
