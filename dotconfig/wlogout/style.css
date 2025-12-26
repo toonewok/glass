@@ -26,24 +26,24 @@ button:focus, button:active, button:hover {
 }
 
 #lock {
-    background-image: image(url("/home/bailey/.config/wlogout/icons/lock.png"));
+    background-image: image(url("replace-me/.config/wlogout/icons/lock.png"));
 }
 
 
 #shutdown {
-    background-image: image(url("/home/bailey/.config/wlogout/icons/pwr.png"));
+    background-image: image(url("replace-me/.config/wlogout/icons/pwr.png"));
 }
 
 #reboot {
-    background-image: image(url("/home/bailey/.config/wlogout/icons/rstrt.png"));
+    background-image: image(url("replace-me/.config/wlogout/icons/rstrt.png"));
 }
 
 #sleep {
-    background-image: image(url("/home/bailey/.config/wlogout/icons/slp.png"));
+    background-image: image(url("replace-me/.config/wlogout/icons/slp.png"));
 }
 #search {
-    background-image: image(url("/home/bailey/.config/wlogout/icons/srch.png"));
+    background-image: image(url("replace-me/.config/wlogout/icons/srch.png"));
 }
 #sysmon {
-    background-image: image(url("/home/bailey/.config/wlogout/icons/sys.png"));
+    background-image: image(url("replace-me/.config/wlogout/icons/sys.png"));
 }
