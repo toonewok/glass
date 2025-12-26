@@ -1,6 +1,6 @@
 * {
 	font-family: EnvyCoder Nerd Font;
-	font-size: 18px;
+	font-size: 22px;
   }
 
   window#waybar {
@@ -58,7 +58,7 @@ margin-right:7px;
 #custom-pp,
 #custom-prev,
 #custom-next,
-#custom-trayic,
+
 #custom-softicn,
 #network{
 	margin-right: 0.5em;
@@ -92,7 +92,7 @@ color:#799851;
 color:#66a29b;
 }
 #custom-trayic{
-color:#ba4c54;
+color:#aaaaaa;
 }
 #memory{
 
@@ -104,6 +104,11 @@ color:#ba4c54;
 #media{
 
 padding-right: 1em;
+}
+
+#pulseaudio{
+	margin-right: 0.3em;
+	margin-left: 0.25em;
 }
 #custom-power{
 	margin-right: 7px;	

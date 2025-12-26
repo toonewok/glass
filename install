@@ -13,7 +13,7 @@ read -s varpw
 echo "$varpw" | sudo -S pacman -Syy
 
 #installs extra base packages not included with cachy
-echo "$varpw" | sudo -S pacman -S --noconfirm --needed go gtk3 gtk-layer-shell tty-clock xclip hyprlock hyprpaper nvim rofi waybar zsh nwg-look nemo pavucontrol ttf-envycoder-nerd ttf-tinos-nerd spotify-launcher steam swayidle gimp prismlauncher obs-studio vlc shotcut wine
+echo "$varpw" | sudo -S pacman -S --noconfirm --needed go gtk3 gtk-layer-shell tty-clock xclip hyprlock hyprpaper nvim rofi waybar zsh nwg-look nemo pavucontrol ttf-envycoder-nerd ttf-tinos-nerd spotify-launcher steam swayidle hypridle gimp prismlauncher obs-studio vlc shotcut wine
 
 #installs ohmyzsh
 RUNZSH=no CHSH=no KEEPZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

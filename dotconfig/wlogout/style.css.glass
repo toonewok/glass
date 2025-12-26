@@ -14,10 +14,10 @@ button {
 	border-style: none;
     	color: #aaaaaa;
 	background-color: transparent;
-
+	margin: 0px 10px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 25%;
+	background-size: 45%;
 }
 
 button:focus, button:active, button:hover {
@@ -36,14 +36,4 @@ button:focus, button:active, button:hover {
 
 #reboot {
     background-image: image(url("/home/bailey/.config/wlogout/icons/rstrt.png"));
-}
-
-#sleep {
-    background-image: image(url("/home/bailey/.config/wlogout/icons/slp.png"));
-}
-#search {
-    background-image: image(url("/home/bailey/.config/wlogout/icons/srch.png"));
-}
-#sysmon {
-    background-image: image(url("/home/bailey/.config/wlogout/icons/sys.png"));
 }

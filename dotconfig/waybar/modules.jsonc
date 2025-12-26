@@ -100,19 +100,21 @@
 		"tooltip": false,
 		"on-click": "reboot"
 	},
-	
+
 	"pulseaudio":
 	{
-		"format": "{icon}<span color='#b5b4b1'>{volume}</span>",
-		"format-muted": "<span color='#F7DA63'>MUTE</span>",
+		
+		"format": "{icon}<span color='#66a29b'>{volume}</span>",
+		"format-muted": "<span color='#ac4f6a'>MUTE</span>",
 		"on-click": "pavucontrol",
-		"on-click-right":"bash -c 'pactl set-source-mute $(pactl get-default-sink) toggle'",
+		"on-click-right":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"format-icons": 
 		{	
 			"default": ["",""," "] 
 		}
 	},
-	"custom/osrs":
+	
+		"custom/osrs":
 	{
 		"format":"",
 		"tooltip":false,
