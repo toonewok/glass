@@ -13,7 +13,7 @@ read -s varpw
 echo "$varpw" | sudo -S pacman -Syy
 
 #installs extra base packages not included with cachy
-echo "$varpw" | sudo -S pacman -S --noconfirm --needed tty-clock xclip hyprlock hyprpaper nvim rofi waybar zsh nwg-look nemo pavucontrol ttf-jetbrains-mono-nerd ttf-tinos-nerd spotify-launcher steam swayidle gimp prismlauncher obs-studio vlc shotcut wine
+echo "$varpw" | sudo -S pacman -S --noconfirm --needed tty-clock xclip hyprlock hyprpaper nvim rofi waybar zsh nwg-look nemo pavucontrol ttf-envycoder-nerd ttf-tinos-nerd spotify-launcher steam swayidle gimp prismlauncher obs-studio vlc shotcut wine
 
 #installs ohmyzsh
 RUNZSH=no CHSH=no KEEPZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -35,7 +35,7 @@ sed -i -e "s|<user>|$USER|g" hyprlockgetty
 
 
 
-
+tar -xzf Pictures.tgz
 rm *.tgz
 
 zshtext=$(cat hyprlockzsh)
