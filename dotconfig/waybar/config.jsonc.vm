@@ -10,57 +10,91 @@
 	"include": "~/.config/waybar/modules.jsonc",
 	"output":"Virtual-1",
 	//"layer": "top",
-	"position": "right",
+	"position": "top",
 	"mod":"dock",
-	"width":50,
 	"spacing": 4,
 	"margin-right": 0,
-	"margin-left": 5,
-	"margin-top": 50,
-	"margin-bottom": 50,
+	"margin-left": 0,
+	"margin-top": 0,
+	"margin-bottom": 5,
 
 //--------------------------------------------
 // module layout
 //--------------------------------------------
 	"modules-left":
 	[
-		
-	"custom/power",
-
-	"group/vertclock",
-
+	"hyprland/workspaces",
 	"group/media",
-
-	"group/soft"
-			
+	"hyprland/window"
 	],
 	"modules-center":
 	[	
-		"custom/spotify-out"
+		"clock#long"
 	],
 	"modules-right":
 	[	
-		"group/misc",
-		"hyprland/workspaces"
+		
+		
+		"group/expand",
+		"custom/power"
+
 	],
 	"group/vertclock":
 	{
-		"orientation":"vertical",
+		"orientation":"horizontal",
 		"modules": [
 		"clock#verta",
-		"clock#vertb"
+		"clock#vVirtual-1"
+		]
+	},
+	"group/storage":
+	{
+		"orientation":"horizontal",	
+		"modules": [
+			"disk"
+
+		]
+
+	},
+	"group/expand":
+	{
+		"orientation":"horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-power",
+			"transition-left-to-right": false
+			  },
+		"modules": [
+			"custom/softicn",
+			"group/soft"
+		]
+	},
+	"group/system":
+	{
+		"orientation":"horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-power",
+			"transition-left-to-right": false
+			  },
+		"modules": [
+			"custom/trayic",
+			"tray",
+			"network",
+			"group/storage",
+			"memory",
+			"cpu"
 		]
 	},
 	"group/soft":
 	{
-		"orientation":"vertical",
-		"class":"soft-group",
+		"orientation":"horizontal",
+	
 		"modules":[
+			
+			"group/system",
 			"custom/steam",
-			"custom/osrs",
 			"custom/spotify",
-			"custom/blender",
-			"custom/cad",	
 			"custom/calc"
 
 				
@@ -69,12 +103,18 @@
 
 	"group/media":
 	{
-		"orientation":"vertical",
-		
+		"orientation":"horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-power",
+			"transition-left-to-right": true
+			  },
 		"modules":[
+			"custom/musiclogo",
 			"custom/pp",
 			"custom/prev",
-			"custom/next"
+			"custom/next",
+			"custom/spotifyout"
 
 		]
 	},
@@ -94,7 +134,7 @@
 	"group/pwr":
 	{
 		"position": "right",
-		"orientation": "vertical",
+		"orientation": "horizontal",
 		"drawer": {
 			"transition-duration": 500,
 			"children-class": "not-power",
