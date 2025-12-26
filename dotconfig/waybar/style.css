@@ -1,0 +1,124 @@
+* {
+	font-family: EnvyCoder Nerd Font;
+	font-size: 18px;
+  }
+
+  window#waybar {
+  	background-color: rgba(5, 5, 5, 0.0);
+
+  }
+
+
+.modules-left{
+opacity: 1;
+color: #aaaaaa;
+
+}
+.modules-center{
+opacity: 1;
+color: #aaaaaa;
+
+
+}
+.modules-right{
+opacity: 1;
+color: #aaaaaa;
+margin-right:7px;
+ 
+
+
+}
+
+
+#workspaces {
+	padding: 0px 0px;
+}
+
+#workspaces button {
+	color:#aaaaaa;
+
+}
+
+#workspaces button.active {
+	color:#66a29b;
+
+}
+
+#workspaces button:hover {
+
+
+}
+
+#hyprland-window,
+#disk,
+#cpu,
+#memory,
+#custom-sysmonicon,
+#custom-musiclogo,
+#custom-pp,
+#custom-prev,
+#custom-next,
+#custom-trayic,
+#custom-softicn,
+#network{
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+
+
+}
+#custom-calc,
+#custom-osrs,
+#custom-steam,
+#custom-spotify,
+#custom-blender,
+#custom-cad{
+	margin-left: 0.4em;
+	margin-right: 0.4em;
+}
+
+#custom-musiclogo{
+color:#aaaaaa;
+}
+
+#custom-pp{
+color:#ba4c54;
+}
+
+#custom-prev{
+color:#799851;
+}
+
+#custom-next{
+color:#66a29b;
+}
+#custom-trayic{
+color:#ba4c54;
+}
+#memory{
+
+}
+
+#cpu{
+
+}
+#media{
+
+padding-right: 1em;
+}
+#custom-power{
+	margin-right: 7px;	
+
+	color:#ba4c54;
+
+	
+}
+
+#soft{
+
+}
+
+
+
+
+
+

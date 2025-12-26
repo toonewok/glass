@@ -1,0 +1,155 @@
+[
+// Feb 19, 2025
+// Redoing rice again lmao
+
+//--------------------------------------------
+// main monitor bar options
+//--------------------------------------------
+
+{
+	"include": "~/.config/waybar/modules.jsonc",
+	"output":"DP-3",
+	//"layer": "top",
+	"position": "top",
+	"mod":"dock",
+	"spacing": 4,
+	"margin-right": 0,
+	"margin-left": 0,
+	"margin-top": 0,
+	"margin-bottom": 5,
+
+//--------------------------------------------
+// module layout
+//--------------------------------------------
+	"modules-left":
+	[
+	"hyprland/workspaces",
+	"group/media",
+	"hyprland/window"
+	],
+	"modules-center":
+	[	
+		"clock#long"
+	],
+	"modules-right":
+	[	
+		
+		
+		"group/expand",
+		"custom/power"
+
+	],
+	"group/vertclock":
+	{
+		"orientation":"horizontal",
+		"modules": [
+		"clock#verta",
+		"clock#vertb"
+		]
+	},
+	"group/storage":
+	{
+		"orientation":"horizontal",	
+		"modules": [
+			"disk"
+
+		]
+
+	},
+	"group/expand":
+	{
+		"orientation":"horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-power",
+			"transition-left-to-right": false
+			  },
+		"modules": [
+			"custom/softicn",
+			"group/soft"
+		]
+	},
+	"group/system":
+	{
+		"orientation":"horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-power",
+			"transition-left-to-right": false
+			  },
+		"modules": [
+			"custom/trayic",
+			"tray",
+			"network",
+			"group/storage",
+			"memory",
+			"cpu"
+		]
+	},
+	"group/soft":
+	{
+		"orientation":"horizontal",
+	
+		"modules":[
+			
+			"group/system",
+			"custom/steam",
+			"custom/spotify",
+			"custom/calc"
+
+				
+		]
+	},
+
+	"group/media":
+	{
+		"orientation":"horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-power",
+			"transition-left-to-right": true
+			  },
+		"modules":[
+			"custom/musiclogo",
+			"custom/pp",
+			"custom/prev",
+			"custom/next",
+			"custom/spotifyout"
+
+		]
+	},
+
+	"group/misc":
+	{	
+		"rotate":90,
+		"orientation":"vertical",
+		"drawer":{
+				"transition-duration": 500,
+				"children-class": "not-power",
+				"transition-left-to-right": false
+			},
+			"modules":["custom/trayic", "tray" ]
+	},
+
+	"group/pwr":
+	{
+		"position": "right",
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-power",
+			"transition-left-to-right": false
+			  },
+	"modules":["custom/power","custom/reboot"]
+	}
+
+
+
+}
+
+
+
+
+
+
+]

@@ -1,0 +1,27 @@
+  - MODIFIER(SUPER/WINDOWS/CMD by default)
+
+ Hyprland controls
+ -----------------------------
+  + ENTER - opens application launcher
+  + Q - closes active window
+  + T - opens terminal
+  + B - opens web browser
+  + F - opens file manager
+  + any arrow key - moves to active window in direction pressed
+  + any number - moves to that workspace
+  + SHIFT + V - toggles floating window
+  + SHIFT + F - toggles fullscreen
+  + SHIFT + LMB(HOLD) - picks up selected window, release LMB to drop
+  + SHIFT + RMB(HOLD) - resizes selected window, release RMB to stop
+  + SHIFT + any number - moves active window to workspace of number pressed
+
+ Useful aliases
+ -----------------------------
+ p - sudo pacman -S
+ y - yay -S
+ v - nvim
+ help - shows *this*
+ edit - opens zshrc in nvim
+ vh - opens hyprland config in nvim
+
+

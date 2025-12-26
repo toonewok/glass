@@ -1,0 +1,267 @@
+{
+
+"hyprland/workspaces": {
+	
+		"on-click": "activate",
+		"active-only": false,
+		"all-outputs": false,
+		"format": "{icon}",
+		"format-icons": {
+			"empty": "",
+			"active": "",
+			"default": ""
+						},
+		"persistent-workspaces": {
+			"DP-3": [1 ,2 , 3]
+			}
+		},
+
+	"custom/trayic":
+	{
+		"format": "",
+		"tooltip":false
+
+	},
+	"custom/softicn":
+	{
+		"format": "",
+		"tooltip":false
+
+	},
+
+	"tray":
+	{
+		"icon-size": 20,
+		"spacing": 10
+	},
+
+	"custom/rofisearch":
+	{
+		"format": "<span color='#0fb6ca'></span>",
+		"tooltip":false,
+		"on-click":"rofi -disable-history -show drun"
+	},
+	"custom/musiclogo":
+	{
+	//	"format": "󰓇",
+		"rotate": 0,
+		"format": "󰝚",
+		"tooltip":false
+	},
+	"custom/pp":
+	{
+		"format": "󰐊",
+		"tooltip":false,
+		"on-click": "playerctl play-pause"
+	
+	},
+	"custom/prev":
+	{
+		"format": "󰒮",
+		"tooltip":false,
+		"on-click": "playerctl previous"
+	},
+	"custom/next":
+	{
+		"format": "󰒭",
+		"tooltip":false,
+		"on-click": "playerctl next"
+
+	},
+	"custom/spotifyout":
+	{
+		
+		"exec":"~/.config/waybar/scripts/mediaplayer.py --player spotify",
+		"format":"{}",
+		"return-type":"json"
+		//"rotate":270
+	},
+	"custom/power":
+	{
+		"format": "⏻",
+		"tooltip":false,
+		"on-click": "~/shellscripts/pwrbtn.sh"
+	},
+	"custom/quit":
+	{
+		"format": "<span color='#821519'>󰗽</span>",
+		"tooltip": false,
+		"on-click": "hyprctl dispatch exit"	
+	},
+	"custom/lock": 
+	{
+		"format": "<span color='#821519'></span>",
+		"on-click": "hyprlock",
+		"tooltip": false
+	},
+	"custom/reboot":
+	{
+		"format": "<span color='#d79921'></span>",
+		"tooltip": false,
+		"on-click": "reboot"
+	},
+	
+	"pulseaudio":
+	{
+		"format": "{icon}<span color='#b5b4b1'>{volume}</span>",
+		"format-muted": "<span color='#F7DA63'>MUTE</span>",
+		"on-click": "pavucontrol",
+		"on-click-right":"bash -c 'pactl set-source-mute $(pactl get-default-sink) toggle'",
+		"format-icons": 
+		{	
+			"default": ["",""," "] 
+		}
+	},
+	"custom/osrs":
+	{
+		"format":"",
+		"tooltip":false,
+		"on-click": "bolt"
+
+	},
+
+	"custom/blender":
+	{
+		"format":"",
+		"tooltip":false,
+		"on-click": "blender"
+	},
+	"custom/cad":
+	{
+		"format":"󰻬",
+		"tooltip":false,
+		"on-click": "firefox --new-window https://cad.onshape.com/signin"
+	},
+
+	"custom/calc":
+	{
+		"format":"",
+		"tooltip":false,
+		"on-click":"qalculate-gtk"
+	},
+	"custom/youtube":
+	{
+		"format":"",
+		"tooltip":false,
+		"on-click":"helium-browser --new-window https://youtube.com/"
+	},
+	"custom/github":
+	{
+		"format":"",
+		"tooltip":false,
+		"on-click":"helium-browser --new-window https://github.com/toonewok/"
+	},
+	"custom/spotify":
+	{
+		"format":"",
+		"tooltip":false,
+		"on-click": "hyprctl dispatch workspace 6;"
+	},
+	"custom/steam":
+	{
+		"format":"",
+		"tooltip": false,
+		"on-click": "hyprctl dispatch workspace 7; steam"
+	},
+	"custom/helium-browser":
+	{
+		"format":"",
+		"tooltip": false,
+		"on-click": "helium-browser"
+	},
+	"custom/filebrowser":
+	{
+		"format":"",
+		"tooltip": false,
+		"on-click": "nemo"
+	},
+
+
+	"custom/sep":
+	{
+		"format":"|",
+		"interval":"once",
+		"rotate":90,
+		"tooltip": false
+	},
+	"network":
+	{	
+		
+		"interval": 1,
+		"format": "<span color='#ae5259'> </span><span color='#aaaaaa'>{bandwidthDownBytes}</span> <span color='#799851'></span> <span color='#aaaaaa'>{bandwidthUpBytes}</span>",
+	//	"format-wifi": "",
+	//	"format-ethernet": "󰈀",
+		"format-disconnected": "<span color='#F7DA63'>  NO CONNECTION</span>"
+	//	"tooltip-format":  
+	},
+	
+	"clock":
+	{
+		"format":"<span color='#b5b4b1'>{:%I:%M}</span>",
+		"tooltip-format":"<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>"
+	},
+	"clock#verta":
+	{
+		"format":"{:%I}",
+		"tooltip-format":"<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>"
+	},
+	"clock#vertb":
+	{
+		"format":"{:%M}"
+	},
+
+	"clock#long": 
+	{
+	
+		"format":"{:%A, %B %d, %Y - %I:%M}",
+		"tooltip-format":"<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>"
+	},
+	"cpu":
+	{
+		"format": "<span color='#ac4f6a'> </span>{usage}",
+		"tooltip": true
+	},
+
+	"memory":
+	{
+		"format": "<span color='#66a29b'> </span>{}"
+	},
+
+	"custom/sysmonicon":
+	{
+		"format":""
+	},
+	"disk":
+	{
+		"path": "/",
+		"interval": 30,
+		"format": "<span color='#66a29b'>root</span> {free}",
+		"unit": "GB"
+	},
+
+	"disk#nvme":
+	{
+		"path": "/home/bailey/nvme",
+		"interval": 30,
+		"format": "<span color='#ac4f6a'>nvme</span> {free}",
+		"unit": "GB"
+	},
+
+	"disk#ssd":
+	{
+		"path": "/home/bailey/ssd",
+		"interval": 30,
+		"format": "<span color='#799851'>ssd</span> {free}",
+		"unit": "GB"
+	},
+	"cava":
+	{	
+		//i cant get this working properly, it always sends the 3rd icon for every other....bcacacbcacbcacccbc etc
+		"framerate":30,
+		"bars":5,
+		"source": "pipewire",
+		"format-icons": ["a", "b", "c" ]
+	
+	}
+
+}
