@@ -23,5 +23,7 @@
  help - shows *this*
  edit - opens zshrc in nvim
  vh - opens hyprland config in nvim
+ rice - usage: "rice glass save" "rice glass restore" 
+ 		"rice glass git float" "rice refresh" 
 
 
