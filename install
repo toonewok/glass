@@ -86,6 +86,8 @@ echo "$varpw" | yay -S --noconfirm --needed Vesktop
 echo "$varpw" | yay -S --noconfirm --needed faugus-launcher
 #installs wlogout
 echo "$varpw" | yay -S --noconfirm --needed wlogout
+#installs downgrade
+echo "$varpw" | yay -S --noconfirm --needed downgrade
 #installs quickshell and sets up screenshot utility
 echo "$varpw" | yay -S --noconfirm --needed quickshell
 cd ~/.config/quickshell
