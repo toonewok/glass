@@ -53,8 +53,8 @@
 		"orientation":"horizontal",	
 		"modules": [
 			"disk",
-			"disk#nvme",
-			"disk#ssd"
+	//		"disk#nvme",
+	//		"disk#ssd"
 		]
 
 	},
