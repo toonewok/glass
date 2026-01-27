@@ -12,7 +12,7 @@
 			"default": ""
 						},
 		"persistent-workspaces": {
-			"Virtual-1": [1 ,2 , 3]
+			"DP-3": [1 ,2 , 3]
 			}
 		},
 
@@ -100,7 +100,7 @@
 		"tooltip": false,
 		"on-click": "reboot"
 	},
-
+	
 	"pulseaudio":
 	{
 		
@@ -113,8 +113,7 @@
 			"default": ["",""," "] 
 		}
 	},
-	
-		"custom/osrs":
+	"custom/osrs":
 	{
 		"format":"",
 		"tooltip":false,
