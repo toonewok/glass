@@ -280,21 +280,9 @@ workspace = 8,monitor:Virtual-1, on-created-empty:[float] alacritty -e sh -c "bt
 workspace = 9,monitor:Virtual-1
 workspace = 11,monitor:Virtual-1, on-created-empty:[float] qalculate-gtk
 
-# Ignore maximize requests from apps. You'll probably like this.
-windowrule = suppressevent maximize, class:.*
-windowrule = opacity 0.8 override, class:helium
-#bordercolor rgba(1db954ff),
-windowrule = opacity 0.8 override, class:spotify
-windowrule = opacity 0.8 override, class:firefox
-windowrule = opacity 0.8 override, class:nemo
-windowrule = opacity 0.8 override, class:steam
-windowrule = opacity 0.8 override, class:qalculate-gtk
-windowrule = opacity 0.8 override, class:vesktop
-windowrule = noborder, class:net-runelite-client-RuneLite
-windowrule = fullscreen,class:blender
-windowrule = opacity 1 override, fullscreen:1
-windowrule = float, class:qalculate-gtk
-windowrule = size 1200 800, class:qalculate-gtk
+windowrule {
+ name = spotify
+ match:class = spotify
+ opacity = 0.8
+}
 
-# Fix some dragging issues with XWayland
-windowrule = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0

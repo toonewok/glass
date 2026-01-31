@@ -1,4 +1,10 @@
+splash = false
 
-preload = ~/Pictures/Wallpapers/dlmb.jpg
-wallpaper = Virtual-1,~/Pictures/Wallpapers/dlmb.jpg
+wallpaper {
+    monitor = Virtual-1
+    path = ~/Pictures/Wallpapers/dlmb.jpg
+    fit_mode = cover
+
+}
+
 
