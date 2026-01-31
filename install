@@ -58,11 +58,11 @@ if [ "$monname" = "Virtual-1" ]; then
 else
 	echo "normal system detected, proceeding normally"
 	sed -i -e "s|Virtual-1|$monname|g" dotconfig/hypr/hyprpaper.conf
-	sed -i -e "s|Virtual-1|$monname|g" dotconfig/waybar/config.jsonc
-	sed -i -e "s|Virtual-1|$monname|g" dotconfig/waybar/modules.jsonc
 	sed -i -e "s|Virtual-1|$monname|g" dotconfig/hypr/hyprland.conf
 	sed -i -e "s|1920x1080|$monres|g" dotconfig/hypr/hyprland.conf
 	sed -i -e "s|Virtual-1|$monname|g" dotconfig/hypr/hyprlock.conf
+	sed -i -e "s|Virtual-1|$monname|g" dotconfig/waybar/config.jsonc
+	sed -i -e "s|Virtual-1|$monname|g" dotconfig/waybar/modules.jsonc
 	sed -i -e "s|replace-me|$HOME|g" dotconfig/wlogout/style.css
 fi
 
